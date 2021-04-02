@@ -12,13 +12,13 @@
   .tabsActive {
     position: relative;
     width: 100%;
-    height: 45px;
+    height: 0.45rem;
     display: flex;
     justify-content: center;
     align-items: center;
     .tab,
     .active {
-      margin: 0 25px;
+      margin: 0 0.25rem;
       width: 50px;
       height: 100%;
       position: relative;
@@ -27,93 +27,92 @@
       align-items: center;
       .tabTitle {
         z-index: 2;
-        font-size: 16px;
+        font-size: 0.16rem;
         font-family: PingFangSC-Regular, PingFang SC;
         font-weight: 400;
         color: #666666;
-        line-height: 45px;
+        line-height: 0.45rem;
       }
     }
     .active {
       .tabTitle {
-        font-size: 16px;
+        font-size: 0.16rem;
         font-family: PingFangSC-Semibold, PingFang SC;
         font-weight: 600;
         color: #333333;
-        line-height: 22px;
+        line-height: 0.22rem;
       }
       &::after {
         z-index: 1;
         content: "";
         display: block;
         position: absolute;
-        bottom: 13px;
-        width: 50px;
-        height: 5px;
+        bottom: 0.13rem;
+        width: 0.5rem;
+        height: 0.05rem;
         background: linear-gradient(135deg, #ff6c6b 0%, #ff3a39 100%);
-        border-radius: 3px;
+        border-radius: 0.03rem;
       }
     }
   }
   .nameplate {
-    margin: 5px 15px 15px 15px;
-    width: calc(100% - 30px);
-    padding: 15px;
-    height: 100px;
+    margin: 0.05rem 0.15rem 0.15rem 0.15rem;
+    width: calc(100% - 0.3rem);
+    padding: 0.15rem;
+    height: 1rem;
     background: #ffffff;
-    box-shadow: 0px 2px 30px 0px rgba(0, 0, 0, 0.06);
-    border-radius: 10px;
+    box-shadow: 0px 0.2rem 0.3rem 0px rgba(0, 0, 0, 0.06);
+    border-radius: 0.1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     .nameplateTop {
-      width: 177px;
-      height: 18px;
+      display: flex;
       image,
       img {
-        width: 100%;
-        height: 100%;
+        width: 1.77rem;
+        height: 0.18rem;
       }
     }
     .nameplateBottom {
-      margin-top: 10px;
+      margin-top: 0.1rem;
       display: flex;
       justify-content: center;
       align-items: center;
       .avatr {
-        width: 36px;
-        height: 36px;
+        width: 0.36rem;
+        height: 0.36rem;
         border-radius: 50%;
       }
       .vipLogo {
-        width: 45px;
-        height: 20px;
-        margin-left: 10px;
+        width: 0.45rem;
+        height: 0.2rem;
+        margin-left: 0.1rem;
       }
       text,
       span {
-        margin-left: 10px;
-        font-size: 14px;
+        margin-left: 0.1rem;
+        font-size: 0.14rem;
         font-family: PingFangSC-Regular, PingFang SC;
         font-weight: 400;
         color: #666666;
-        line-height: 20px;
+        line-height: 0.2rem;
       }
     }
   }
   .detail {
-    margin: 0 15px;
-    width: calc(100% - 30px);
+    margin: 0 0.15rem;
+    width: calc(100% - 0.3rem);
     flex: 1;
     overflow-y: auto;
     background: #ffffff;
-    box-shadow: 0px 2px 30px 0px rgba(0, 0, 0, 0.05),
-      0px 2px 30px 0px rgba(0, 0, 0, 0.05);
-    border-radius: 10px;
+    box-shadow: 0px 0.02rem 0.3rem 0px rgba(0, 0, 0, 0.05),
+      0px 0.02rem 0.3rem 0px rgba(0, 0, 0, 0.05);
+    border-radius: 0.1rem;
     position: relative;
     .detailContent {
-      padding: 15px;
+      padding: 0.15rem;
       width: 100%;
       height: 100%;
     }
@@ -121,59 +120,59 @@
       position: absolute;
       bottom: 0;
       left: 0;
-      border-radius: 10px;
+      border-radius: 0.1rem;
       background-color: rgba(0, 0, 0, 0.1);
       width: 100%;
-      padding: 10px 20px;
+      padding: 0.1rem 0.2rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
       .item {
-        border: 1px solid transparent;
+        border: 0.01rem solid transparent;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 15px 0;
+        padding: 0.15rem 0;
         background: #ffffff;
-        border-radius: 10px;
+        border-radius: 0.1rem;
         flex: 1;
         .time {
-          font-size: 12px;
+          font-size: 0.12rem;
           font-family: PingFangSC-Semibold, PingFang SC;
           font-weight: 600;
           color: #ccc;
           span {
-            font-size: 18px;
+            font-size: 0.18rem;
             font-family: PingFangSC-Semibold, PingFang SC;
             font-weight: 600;
             color: #333333;
-            line-height: 25px;
+            line-height: 0.25rem;
           }
         }
         .promotionPrice {
-          margin-top: 3px;
-          font-size: 14px;
+          margin-top: 0.03rem;
+          font-size: 0.14rem;
           font-family: PingFangSC-Semibold, PingFang SC;
           font-weight: 600;
           color: #ff3a39;
-          line-height: 20px;
+          line-height: 0.2rem;
         }
         .originalPrice {
-          font-size: 12px;
+          font-size: 0.12rem;
           font-family: PingFangSC-Regular, PingFang SC;
           font-weight: 400;
           color: #cccccc;
-          line-height: 17px;
+          line-height: 0.17rem;
           position: relative;
           text-decoration: line-through;
         }
       }
       .itemActive {
-        border: 1px solid #ff3a39;
+        border: 0.01rem solid #ff3a39;
       }
       .item + .item {
-        margin-left: 10px;
+        margin-left: 0.1rem;
       }
     }
   }
@@ -185,15 +184,15 @@
     align-items: center;
     button {
       border: none;
-      width: 200px;
-      height: 40px;
+      width: 2rem;
+      height: 0.4rem;
       background: #ff3a39;
-      border-radius: 20px;
-      font-size: 14px;
+      border-radius: 0.2rem;
+      font-size: 0.14rem;
       font-family: PingFangSC-Semibold, PingFang SC;
       font-weight: 600;
       color: #ffffff;
-      line-height: 40px;
+      line-height: 0.4rem;
       text-align: center;
       &::after {
         display: none;
