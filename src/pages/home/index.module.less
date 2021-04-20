@@ -3,10 +3,7 @@
   width: 100%;
 
   .content {
-    display: flex;
     width: 100%;
-    height: 100vh;
-    flex-direction: column;
   }
   .tabs,
   .tabsActive {
@@ -68,6 +65,9 @@
     align-items: center;
     justify-content: center;
     .nameplateTop {
+      margin-top: 0.1rem;
+      align-items: center;
+      justify-content: center;
       display: flex;
       image,
       img {
@@ -80,19 +80,9 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      .avatr {
-        width: 0.36rem;
-        height: 0.36rem;
-        border-radius: 50%;
-      }
-      .vipLogo {
-        width: 0.45rem;
-        height: 0.2rem;
-        margin-left: 0.1rem;
-      }
+      position: relative;
       text,
       span {
-        margin-left: 0.1rem;
         font-size: 0.14rem;
         font-family: PingFangSC-Regular, PingFang SC;
         font-weight: 400;
@@ -112,14 +102,18 @@
     border-radius: 0.1rem;
     position: relative;
     .detailContent {
+      margin: 0;
       padding: 0.15rem;
       width: 100%;
       height: 100%;
     }
+    .detailContentw {
+      margin: 0;
+      padding: 0.15rem 0;
+      width: 100%;
+      height: 100%;
+    }
     .vipPrice {
-      position: absolute;
-      bottom: 0;
-      left: 0;
       border-radius: 0.1rem;
       background-color: rgba(0, 0, 0, 0.1);
       width: 100%;
@@ -175,6 +169,14 @@
         margin-left: 0.1rem;
       }
     }
+    .vipDate {
+      font-size: 0.1rem;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #999999;
+      line-height: 0.14rem;
+      margin-left: 0.11rem;
+    }
   }
   .btn {
     width: 100%;
@@ -199,4 +201,80 @@
       }
     }
   }
+}
+.goldtitle {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 0.16rem;
+  font-size: 0.14rem;
+  font-family: PingFangSC-Semibold, PingFang SC;
+  font-weight: 600;
+  color: #333333;
+  line-height: 0.2rem;
+}
+.detailContent {
+  width: 100%;
+  image,
+  img {
+    width: 100%;
+  }
+  .detailItem {
+    font-size: 0.12rem;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #666666;
+    text-align: left;
+    line-height: 0.29rem;
+    text,
+    span {
+      font-size: 0.12rem;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 500;
+      line-height: 0.29rem;
+      color: #ff3a39;
+    }
+  }
+}
+.avatr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  .avatrImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 0.36rem;
+    height: 0.36rem;
+    image,
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+  }
+  .avatrBorder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    image,
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+.vipLogo {
+  width: 0.45rem;
+  height: 0.2rem;
+  margin-left: 0.1rem;
+}
+.itemAvater {
+  position: relative;
 }
